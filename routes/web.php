@@ -11,6 +11,10 @@
 |
 */
 
+use App\Http\Controllers\PermisoController;
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/permiso', 'PermisoController@index');
